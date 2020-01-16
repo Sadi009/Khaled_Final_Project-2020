@@ -1,0 +1,299 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="admin.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
+  <title>Create Exams</title>
+  <link rel="stylesheet" href="admin_style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <div class="page-wrapper chiller-theme toggled">
+    <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+      <i class="fas fa-bars"></i>
+    </a>
+    <nav id="sidebar" class="sidebar-wrapper">
+      <div class="sidebar-content">
+        <div class="sidebar-brand">
+          <div id="close-sidebar">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <div class="sidebar-header">
+          <div class="user-pic">
+            <img class="img-responsive img-rounded" src="../image/admin-avatar-png.png" alt="User picture">
+          </div>
+          <div class="user-info">
+            <span class="user-name">Brain
+              <strong>ac</strong>
+            </span>
+            <span class="user-role">Administrator</span>
+            <span class="user-status">
+              <i class="fa fa-circle"></i>
+              <span>Online</span>
+            </span>
+          </div>
+        </div>
+        <!-- sidebar-header  -->
+
+        <div class="sidebar-menu">
+          <ul>
+            <li class="header-menu">
+              <span>General</span>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="dashboard.html">
+                <i class="fa fa-tachometer-alt"></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="create_subjects.html">
+                <i class="fa fa-book"></i>
+                <span>Create Subject</span>
+              </a>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="create_exam.html">
+                <i class="fa fa-life-ring"></i>
+                <span>Create Exam</span>
+              </a>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="check_users.html">
+                <i class="fa fa-users"></i>
+                <span>Check Users</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- sidebar-menu  -->
+      </div>
+      <!-- sidebar-content  -->
+      <div class="sidebar-footer">
+        <a href="#">
+          <i class="fa fa-bell"></i>
+          <span class="badge badge-pill badge-warning notification">3</span>
+        </a>
+        <a href="#">
+          <i class="fa fa-envelope"></i>
+          <span class="badge badge-pill badge-success notification">7</span>
+        </a>
+        <a href="#">
+          <i class="fa fa-cog"></i>
+          <span class="badge-sonar"></span>
+        </a>
+        <a href="#">
+          <i class="fa fa-power-off"></i>
+        </a>
+      </div>
+    </nav>
+    <!-- sidebar-wrapper  -->
+
+    <!-- page-content" -->
+    <main class="page-content create_exam">
+      <h4>Create Exams</h4>
+      <br><br>
+        <div class="form-group">
+          <label for="subject_name">Sbuject name</label>
+          <input type="text" class="form-control" id="subject_name" placeholder="Enter subject name">
+        </div>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <input type="text" class="form-control" id="description" placeholder="Enter description">
+        </div>
+        <form class="form-group">
+          Time:
+          <input type="time" name="time" class="form-control">
+        </form>
+        <form >
+          Date:
+          <input type="date" name="date" class="form-control">
+        </form>
+        <h5>Questions</h5>
+        <div class="container create_questions">
+          <ol>
+            <li>
+              <div class="form-group">
+                <label for="qusetion_1">Qusetion 01</label>
+                <input type="text" class="form-control" id="qusetion_1" placeholder="Enter qusetion 01">
+              </div>
+              <ul>
+                <li>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="option_1" placeholder="Enter option 01">
+                  </div>
+                </li>
+                <li>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="option_2" placeholder="Enter option 02">
+                  </div>
+                </li>
+                <li>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="option_3" placeholder="Enter option 03">
+                  </div>
+                </li>
+                <li>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="option_4" placeholder="Enter option 04">
+                  </div>
+                </li>
+              </ul>
+              <div class="form-group">
+                <label for="answer_1">Answer 01</label>
+                <input type="text" class="form-control" id="answer_1" placeholder="Enter answer 01">
+              </div>
+            </li>
+            <li>
+              <div class="form-group">
+                <label for="qusetion_2">Qusetion 02</label>
+                <input type="text" class="form-control" id="qusetion_2" placeholder="Enter qusetion 02">
+              </div>
+              <ul>
+                <li>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="option_1" placeholder="Enter option 01">
+                  </div>
+                </li>
+                <li>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="option_2" placeholder="Enter option 02">
+                  </div>
+                </li>
+                <li>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="option_3" placeholder="Enter option 03">
+                  </div>
+                </li>
+                <li>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="option_4" placeholder="Enter option 04">
+                  </div>
+                </li>
+              </ul>
+              <div class="form-group">
+                <label for="answer_2">Answer 02</label>
+                <input type="text" class="form-control" id="answer_2" placeholder="Enter answer 02">
+              </div>
+            </li>
+            <li>
+              <div class="form-group">
+                <label for="qusetion_3">Qusetion 03</label>
+                <input type="text" class="form-control" id="qusetion_3" placeholder="Enter qusetion 03">
+              </div>
+              <ul>
+                <li>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="option_1" placeholder="Enter option 01">
+                  </div>
+                </li>
+                <li>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="option_2" placeholder="Enter option 02">
+                  </div>
+                </li>
+                <li>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="option_3" placeholder="Enter option 03">
+                  </div>
+                </li>
+                <li>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="option_4" placeholder="Enter option 04">
+                  </div>
+                </li>
+              </ul>
+              <div class="form-group">
+                <label for="answer_3">Answer 03</label>
+                <input type="text" class="form-control" id="answer_3" placeholder="Enter answer 03">
+              </div>
+            </li>
+            <li>
+              <div class="form-group">
+                <label for="qusetion_4">Qusetion 04</label>
+                <input type="text" class="form-control" id="qusetion_4" placeholder="Enter qusetion 04">
+              </div>
+              <ul>
+                <li>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="option_1" placeholder="Enter option 01">
+                  </div>
+                </li>
+                <li>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="option_2" placeholder="Enter option 02">
+                  </div>
+                </li>
+                <li>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="option_3" placeholder="Enter option 03">
+                  </div>
+                </li>
+                <li>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="option_4" placeholder="Enter option 04">
+                  </div>
+                </li>
+              </ul>
+              <div class="form-group">
+                <label for="answer_4">Answer 04</label>
+                <input type="text" class="form-control" id="answer_4" placeholder="Enter answer 04">
+              </div>
+            </li>
+            <li>
+              <div class="form-group">
+                <label for="qusetion_5">Qusetion 05</label>
+                <input type="text" class="form-control" id="qusetion_5" placeholder="Enter qusetion 05">
+              </div>
+              <ul>
+                <li>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="option_1" placeholder="Enter option 01">
+                  </div>
+                </li>
+                <li>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="option_2" placeholder="Enter option 02">
+                  </div>
+                </li>
+                <li>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="option_3" placeholder="Enter option 03">
+                  </div>
+                </li>
+                <li>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="option_4" placeholder="Enter option 04">
+                  </div>
+                </li>
+              </ul>
+              <div class="form-group">
+                <label for="answer_5">Answer 05</label>
+                <input type="text" class="form-control" id="answer_1" placeholder="Enter answer 05">
+              </div>
+            </li>
+          </ol>
+          <button class="btn btn-success">Submit</button>
+          <br><br><br>
+        </div>
+    </main>
+
+</body>
+
+</html>

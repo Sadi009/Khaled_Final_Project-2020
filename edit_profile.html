@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Edit Profile</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="index.html">
+      <img src="image/logo.png" alt="logo" style="height: 45px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="profile.html">Profile </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="FAQ.html">FAQ</a>
+        </li>
+        <li class="sign-out">
+          <a class="nav-link" href="login_singup.html" data-toggle="tooltip" title="Sing Out"><i class="fa fa-sign-out"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- navbar end  -->
+  <!-- Edit profile  -->
+  <div class="row edit-profile-content">
+    <!-- Sidebar  -->
+    <div class="col-md-2 col-sm-4 sidebar1">
+      <div class="logo">
+        <img src="image/profileImg1.jpg" class="img-responsive center-block" alt="Logo">
+      </div>
+      <br>
+      <div class="left-navigation">
+        <ul class="list" style="list-style-type:none;">
+          <h5><strong>Hi User</strong></h5>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="subjects.html">Take Quizze</a></li>
+          <li><a href="edit_profile.html">Update Profile</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Sidebar End  -->
+    <!-- edit-profile content  -->
+    <div class="col-md-10 col-sm-8">
+      <div class="container edit-profile">
+        <div class="row">
+          <div class="col-6 col-sm-6 mb-3">
+            <div class="form-group">
+              <label>Full Name</label>
+              <input class="form-control" type="text" name="name" placeholder="name">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-sm-6 mb-3">
+            <div class="form-group">
+              <label>User Name</label>
+              <input class="form-control" type="text" name="username" placeholder="User name">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-6 mb-3">
+            <div class="form-group">
+              <label>About</label>
+              <textarea class="form-control" rows="5" placeholder="My Bio"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-6 mb-3">
+            <div class="form-group">
+              <label>Date of Birth</label>
+              <input class="form-control" type="text" placeholder="Date of Birth">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-6 mb-3">
+            <div class="form-group">
+              <label>Institution Name</label>
+              <input class="form-control" type="text" placeholder="Institution">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-6 mb-3">
+            <div class="form-group">
+              <label>Email</label>
+              <input class="form-control" type="email" placeholder="user@example.com">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-6 mb-3">
+            <div class="mb-2"><b>Change Password</b></div>
+            <div class="row">
+              <div class="col">
+                <div class="form-group">
+                  <label>Current Password</label>
+                  <input class="form-control" type="password" placeholder="••••••">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="form-group">
+                  <label>New Password</label>
+                  <input class="form-control" type="password" placeholder="••••••">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="form-group">
+                  <label>Confirm <span class="d-none d-xl-inline">Password</span></label>
+                  <input class="form-control" type="password" placeholder="••••••">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col d-flex">
+            <button class="btn btn-primary" type="submit">Save Changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Edit-profile End  -->
+</body>
+
+</html>
